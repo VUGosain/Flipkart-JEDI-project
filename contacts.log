@@ -1,0 +1,21 @@
+01:44:39,894 ERROR RegistrationDaoOperation,main:273 - 1054
+01:44:39,896 ERROR RegistrationDaoOperation,main:274 - Unknown column 'courseFee' in 'field list'
+01:45:41,976 ERROR RegistrationDaoOperation,main:273 - 1054
+01:45:41,977 ERROR RegistrationDaoOperation,main:274 - Unknown column 'courseFee' in 'field list'
+11:39:41,541 ERROR AdminDaoOperation,main:171 - No operations allowed after connection closed.
+11:51:13,550 ERROR AdminDaoOperation,main:171 - No operations allowed after connection closed.
+11:56:29,583 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+11:56:29,601 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+11:56:29,618 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+11:58:07,436 ERROR AdminDaoOperation,main:414 - No operations allowed after connection closed.
+11:58:07,437 ERROR AdminDaoOperation,main:372 - No operations allowed after connection closed.
+12:11:39,504 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+12:12:13,934 ERROR AdminDaoOperation,main:457 - No operations allowed after connection closed.
+13:05:57,848 ERROR AdminDaoOperation,main:431 - No operations allowed after connection closed.
+13:06:55,351 ERROR AdminDaoOperation,main:172 - No operations allowed after connection closed.
+13:09:32,321 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+13:09:32,357 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+13:09:52,137 ERROR AdminDaoOperation,main:431 - No operations allowed after connection closed.
+13:36:29,247 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+13:39:32,397 ERROR UserDaoOperation,main:186 - Illegal operation on empty result set.
+13:44:43,818 ERROR AdminDaoOperation,main:431 - No operations allowed after connection closed.
