@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="removed unnecessary documentation">
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/CRSApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/CRSApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Q7PLAwip11alAlANcVVwAXn2FA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/vishal.gosain/Downloads/CRS-Flipkart-JEDI-Project-main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="CRSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.flipkart.client.CRSApplication" />
+      <module name="CRS-Flipkart-JEDI-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flipkart.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CRSApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="" />
+      <created>1684701592334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684701592334</updated>
+    </task>
+    <task id="LOCAL-00001" summary="edited names">
+      <created>1684729504751</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684729504751</updated>
+    </task>
+    <task id="LOCAL-00002" summary="removed unnecessary documentation">
+      <created>1684729838361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684729838361</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edited names" />
+    <MESSAGE value="removed unnecessary documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary documentation" />
+  </component>
+</project>

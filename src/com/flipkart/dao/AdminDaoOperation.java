@@ -344,6 +344,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 	 * @return List of courses in the catalog
 	 */
 	public List<Course> viewCourses() {
+//		System.out.println("check1");
 		
 		statement = null;
 		List<Course> courseList = new ArrayList<>();
@@ -355,9 +356,12 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			ResultSet resultSet = statement.executeQuery();
 			
 			while(resultSet.next()) {
+
+//				System.out.println("check1");
 				
 				Course course = new Course();
 				course.setCourseCode(resultSet.getString(1));
+//				System.out.println("check2");
 				course.setCourseName(resultSet.getString(2));
 				course.setInstructorId(resultSet.getString(3));
 				courseList.add(course);

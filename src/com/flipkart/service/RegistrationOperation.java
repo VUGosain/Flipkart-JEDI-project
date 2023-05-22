@@ -53,8 +53,8 @@ public class RegistrationOperation implements RegistrationInterface {
 	
 	public boolean addCourse(String courseCode, String studentId,List<Course> availableCourseList) throws CourseNotFoundException, CourseLimitExceededException, SeatNotAvailableException, SQLException 
 	{
-       
-		
+
+		System.out.println("this has to be there");
 
 		if (registrationDaoInterface.numOfRegisteredCourses(studentId) >= 6)
 		{	
