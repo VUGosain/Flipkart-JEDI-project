@@ -434,7 +434,7 @@ private void make_payment(String studentId)
 				{
 					notificationInterface.sendNotification(NotificationTypeConstant.PAYED, studentId, mode, fee);
 					System.out.println("Payment Successful by StudentId :" + studentId);
-					registrationInterface.setPaymentStatus(studentId);				
+					registrationInterface.makePayment(studentId, mode.toString(), fee);
 				}
 				catch (Exception e) 
 				{
