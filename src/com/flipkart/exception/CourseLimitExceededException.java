@@ -3,10 +3,7 @@
  */
 package com.flipkart.exception;
 
-/**
- * @author Tanishq
- *
- */
+
 public class CourseLimitExceededException extends Exception {
 	
 	private int num;

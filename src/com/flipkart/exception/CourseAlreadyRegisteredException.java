@@ -3,10 +3,6 @@
  */
 package com.flipkart.exception;
 
-/**
- * @author Tanishq
- *
- */
 public class CourseAlreadyRegisteredException extends Exception{
 	
 	private String courseCode;

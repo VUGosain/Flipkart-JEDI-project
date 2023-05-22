@@ -5,11 +5,7 @@ import com.flipkart.bean.Course;
 import com.flipkart.bean.EnrolledStudent;
 import com.flipkart.bean.Student;
 
-/**
- * 
- * @author Goenka
- * 
- */
+
 public interface ProfessorDaoInterface {
 	
 	/**

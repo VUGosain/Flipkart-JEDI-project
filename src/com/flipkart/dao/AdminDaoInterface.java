@@ -19,10 +19,7 @@ import com.flipkart.exception.UserIdAlreadyInUseException;
 import com.flipkart.exception.UserNotAddedException;
 import com.flipkart.exception.UserNotFoundException;
 
-/**
- * @author Tanishq
- *
- */
+
 public interface AdminDaoInterface {
 	
 	public List<Course> viewCourses();

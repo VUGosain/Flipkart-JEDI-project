@@ -31,10 +31,6 @@ import com.flipkart.exception.UserNotAddedException;
 import com.flipkart.exception.UserNotFoundException;
 import com.flipkart.utils.DBUtils;
 
-/**
- * @author Tanishq
- *
- */
 
 
 public class AdminDaoOperation implements AdminDaoInterface{

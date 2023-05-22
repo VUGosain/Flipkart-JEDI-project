@@ -7,10 +7,7 @@ import java.util.List;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Grade;
 
-/**
- * @author vijayrathod
- * Interface for Registration DAO Operation
- */
+
 
 
 public interface RegistrationDaoInterface {

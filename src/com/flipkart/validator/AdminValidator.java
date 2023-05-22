@@ -7,10 +7,7 @@ import java.util.List;
 
 import com.flipkart.bean.*;
 
-/**
- * @author Tanishq
- *
- */
+
 public class AdminValidator {
 	
 

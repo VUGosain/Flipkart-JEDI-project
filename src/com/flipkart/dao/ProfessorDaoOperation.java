@@ -14,9 +14,7 @@ import com.flipkart.bean.EnrolledStudent;
 import com.flipkart.constant.SQLQueriesConstant;
 import com.flipkart.utils.DBUtils;
 
-/**
- * @author Goenka
- */
+
 public class ProfessorDaoOperation implements ProfessorDaoInterface {
 
 	private static volatile ProfessorDaoOperation instance=null;

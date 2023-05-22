@@ -16,12 +16,7 @@ import com.flipkart.constant.SQLQueriesConstant;
 import com.flipkart.exception.StudentNotRegisteredException;
 import com.flipkart.utils.DBUtils;
 
-/**
- * 
- * @author Aditya
- * Class to implement Student Dao Operations
- *
- */
+
 public class StudentDaoOperation implements StudentDaoInterface {
 	
 	private static volatile StudentDaoOperation instance=null;

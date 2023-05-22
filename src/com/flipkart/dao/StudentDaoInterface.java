@@ -8,12 +8,7 @@ import java.sql.SQLException;
 import com.flipkart.bean.Student;
 import com.flipkart.exception.StudentNotRegisteredException;
 
-/**
- * 
- * @author Aditya
- * Interface for Student Operations
- *
- */
+
 public interface StudentDaoInterface {
 	
 	

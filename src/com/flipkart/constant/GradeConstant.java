@@ -1,11 +1,6 @@
 package com.flipkart.constant;
 
-/**
- * 
- * @author Aditya
- * Enumeration class for GradeConstant
- * 
- */
+
 public enum GradeConstant {
     A(10),
     A_MINUS(9),

@@ -1,10 +1,6 @@
 package com.flipkart.exception;
 
-/**
- * Exception to check if the professor is not added successfully by admin
- * @author Tribhav Chaudhary
- *
- */
+
 public class ProfessorNotAddedException extends Exception{
 	private String professorId;
 	

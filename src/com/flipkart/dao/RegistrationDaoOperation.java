@@ -16,13 +16,6 @@ import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.utils.DBUtils;
 
 
-/**
- * 
- * @author Aditya
- * Class to implement Registration Dao Operations
- * This class communicates with the database.
- *
- */
 public class RegistrationDaoOperation implements RegistrationDaoInterface{
     
 	

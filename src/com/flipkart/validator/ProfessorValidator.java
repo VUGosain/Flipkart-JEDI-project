@@ -6,12 +6,7 @@ import com.flipkart.bean.EnrolledStudent;
 import com.flipkart.bean.RegisteredCourse;
 
 
-/**
- * 
- * @author Goenka
- * Class for Professor Validator
- * 
- */
+
 public class ProfessorValidator {
 	
 	/**

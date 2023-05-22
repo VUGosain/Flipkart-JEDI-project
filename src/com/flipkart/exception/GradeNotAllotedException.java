@@ -3,10 +3,7 @@
  */
 package com.flipkart.exception;
 
-/**
- * @author Tanishq
- *
- */
+
 public class GradeNotAllotedException extends Exception{
 	 
 	private String studentId;

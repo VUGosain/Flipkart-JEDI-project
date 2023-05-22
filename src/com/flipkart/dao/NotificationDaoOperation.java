@@ -17,10 +17,7 @@ import com.flipkart.constant.PaymentModeConstant;
 import com.flipkart.constant.SQLQueriesConstant;
 import com.flipkart.utils.DBUtils;
 
-/**
- * @author vijayrathod
- *
- */
+
 public class NotificationDaoOperation implements NotificationDaoInterface{
 
 	

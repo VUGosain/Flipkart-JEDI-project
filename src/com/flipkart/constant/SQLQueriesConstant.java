@@ -3,10 +3,7 @@
  */
 package com.flipkart.constant;
 
-/**
- * @author Tanishq
- *
- */
+
 public class SQLQueriesConstant {
 	
 		//AdminDao Queries
