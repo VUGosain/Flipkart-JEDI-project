@@ -33,6 +33,8 @@ public class StudentCRSMenu {
 		is_registered = getRegistrationStatus(studentId);
 		
 		while(CRSApplication.loggedin) {
+
+				System.out.println("qwe 2");
 			
 				System.out.println("*****************************");
 				System.out.println("**********Student Menu*********");
@@ -48,7 +50,7 @@ public class StudentCRSMenu {
 				System.out.println("*****************************");
 			
 				int choice = sc.nextInt();
-			
+			    System.out.println("qwe 3" + choice);
 				switch (choice) {
 				
 				case 1: 
@@ -100,8 +102,8 @@ public class StudentCRSMenu {
 
 private void registerCourses(String studentId)
 {
-	
-	
+
+	System.out.println("hello1");
 	if(is_registered)
 	{
 		System.out.println(" Registration is already completed");
@@ -109,6 +111,8 @@ private void registerCourses(String studentId)
 	}
 	
 	int count = 0;
+
+	System.out.println("Student crs 113: " + count);
 	while(count < 6)
 	{
 		try
@@ -118,9 +122,9 @@ private void registerCourses(String studentId)
 			if(courseList==null)
 				return;
 			
-			System.out.println("Enter Course Code : " + (count+1));
+			System.out.println("Enter Course Code 111111 : " + (count+1));
 			String courseCode = sc.next();
-			
+			System.out.println("yahan hai");
 			if(registrationInterface.addCourse(courseCode,studentId,courseList))
 			{
 				System.out.println("Course " + courseCode + " registered sucessfully.");
@@ -167,10 +171,15 @@ private void registerCourses(String studentId)
 private void addCourse(String studentId) {
 	if(is_registered)
 	{
+//		System.out.println("Testing1");
 		List<Course> availableCourseList=viewCourse(studentId);
 		
 		if(availableCourseList==null)
+		{
+//			System.out.println("Testing");
 			return;
+		}
+
 
 		try
 		{

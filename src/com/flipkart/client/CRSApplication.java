@@ -46,6 +46,7 @@ public class CRSApplication {
 			{	
 				case 1:
 					//login
+					System.out.println("qwe 1");
 					crsApplication.loginUser();
 					break;
 				case 2:
@@ -78,7 +79,7 @@ public class CRSApplication {
 	public static void createMainMenu()
 	{
 		System.out.println("----------Welcome to Course Management System---------");
-		System.out.println("1. Login");
+		System.out.println("1. Login 1");
 		System.out.println("2. Student Registration");
 		System.out.println("3. Update password");
 		System.out.println("4. Exit");
@@ -100,7 +101,7 @@ public class CRSApplication {
 		try
 		{
 			System.out.println("-----------------Login------------------");
-			System.out.println("Email:");
+			System.out.println("Email fde:");
 			userId = in.next();
 			System.out.println("Password:");
 			password = in.next();

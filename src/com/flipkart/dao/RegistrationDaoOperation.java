@@ -54,7 +54,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 			stmt = conn.prepareStatement(SQLQueriesConstant.ADD_COURSE);
 			stmt.setString(1, studentId);
 			stmt.setString(2, courseCode);
-			stmt.setString(3, "-");
+			stmt.setString(3, null);
 			stmt.executeUpdate();
 			
 			stmt = conn.prepareStatement(SQLQueriesConstant.DECREMENT_COURSE_SEATS);
@@ -64,6 +64,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		}
 		catch (SQLException e) 
 		{
+			System.out.println(e.getMessage());
 //			logger.info(e.getMessage());
 		}
 		finally
@@ -71,6 +72,8 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 			stmt.close();
 			conn.close();
 		}
+
+		System.out.println("hello");
 		return false;
 		
 	}
