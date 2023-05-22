@@ -104,23 +104,18 @@ public class AdminDaoOperation implements AdminDaoInterface{
 	public void addCourse(Course course) throws CourseExistsAlreadyException{
 		
 		statement = null;
-//		System.out.println("hi");
 		try {
-//			System.out.println("in try");
+			
 			String sql = SQLQueriesConstant.ADD_COURSE_QUERY;
 			statement = connection.prepareStatement(sql);
-
-//			System.out.println(sql);
-//			System.out.println(course.getCourseCode() + " ... " + course.getCourseName() + " ... " + course.getInstructorId());
+			
 			statement.setString(1, course.getCourseCode());
 			statement.setString(2, course.getCourseName());
 			
 			statement.setInt(3, 10);
 			statement.setString(4, course.getInstructorId());
-
-
 			int row = statement.executeUpdate();
-//			System.out.println(row);
+			
 //			logger.info(row + " course added");
 			if(row == 0) {
 //				logger.error("Course with courseCode: " + course.getCourseCode() + "not added to catalog.");
@@ -130,10 +125,10 @@ public class AdminDaoOperation implements AdminDaoInterface{
 //			logger.info("Course with courseCode: " + course.getCourseCode() + " is added to catalog.");
 			
 		}catch(SQLException se) {
-			System.out.println(se.getMessage());
+			
 //			logger.error(se.getMessage());
 			throw new CourseExistsAlreadyException(course.getCourseCode());
-
+			
 		}
 		
 	}
@@ -362,7 +357,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			
 			while(resultSet.next()) {
 
-				System.out.println("check1");
+				//System.out.println("check1");
 				
 				Course course = new Course();
 				course.setCourseCode(resultSet.getString(1));
