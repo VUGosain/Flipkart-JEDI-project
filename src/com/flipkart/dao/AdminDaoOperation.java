@@ -113,7 +113,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			statement.setString(2, course.getCourseName());
 			
 			statement.setInt(3, 10);
-			statement.setString(4, "NOT_GRADED");
+			statement.setString(4, course.getInstructorId());
 			int row = statement.executeUpdate();
 			
 //			logger.info(row + " course added");
@@ -357,7 +357,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			
 			while(resultSet.next()) {
 
-				System.out.println("check1");
+				//System.out.println("check1");
 				
 				Course course = new Course();
 				course.setCourseCode(resultSet.getString(1));

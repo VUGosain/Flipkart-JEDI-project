@@ -20,8 +20,7 @@ public class AdminValidator {
 	public static boolean isValidNewCourse(Course newCourse, List<Course> courseList) {
 		for(Course course : courseList) {
 			if(newCourse.getCourseCode().equalsIgnoreCase(course.getCourseCode())) {
-//				System.out.println("admin validator 23: " + newCourse.getCourseCode() + course.getCourseCode());
-				return false; 
+				return false;
 			}
 		}
 		return true;
