@@ -393,7 +393,7 @@ private void viewGradeCard(String studentId) {
 private void make_payment(String studentId)
 {
 	
-	double fee = 1000.0;
+	double fee = 400.0;
 	boolean isreg = false;
 	boolean ispaid = false;
 	try
