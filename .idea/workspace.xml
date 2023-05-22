@@ -4,7 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="Course add functioning" />
+    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="Course add functioning">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-Flipkart-JEDI-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CRS-Flipkart-JEDI-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Catalog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/EnrolledStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Grade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/GradeCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/NetBanking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Notification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Professor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/RegisteredCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Scholarship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/SemRegistration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/AdminCRSMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/CRSApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/ProfessorCRSMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/StudentCRSMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/constant/GenderConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/constant/GradeConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/constant/NotificationTypeConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/constant/PaymentModeConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/constant/RoleConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/constant/SQLQueriesConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/NotificationDaoInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/NotificationDaoOperation$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/NotificationDaoOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/ProfessorDaoInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/ProfessorDaoOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/RegistrationDaoInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/RegistrationDaoOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/StudentDaoInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/StudentDaoOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/UserDaoInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/UserDaoOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/CourseAlreadyRegisteredException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/CourseExistsAlreadyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/CourseLimitExceededException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/CourseNotAssignedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/CourseNotAvailableException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/CourseNotDeletedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/CourseNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/GradeNotAllotedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/ProfessorIdAlreadyInUseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/ProfessorNotAddedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/SeatNotAvailableException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/StudentIdAlreadyInUseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/StudentNotFoundForApprovalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/StudentNotRegisteredException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/UserIdAlreadyInUseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/UserNotAddedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/exception/UserNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/AdminInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/AdminOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/NotificationInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/NotificationOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/ProfessorInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/ProfessorOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/RegistrationInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/RegistrationOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/StudentInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/StudentOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/UserInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/UserOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/utils/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/validator/AdminValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/validator/ProfessorValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/validator/StudentValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/PaymentModeConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/PaymentModeConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,16 +111,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vishal.gosain/Downloads/CRS-Flipkart-JEDI-Project-main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "/Users/vishal.gosain/Downloads/CRS-Flipkart-JEDI-Project-main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

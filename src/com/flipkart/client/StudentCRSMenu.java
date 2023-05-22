@@ -109,8 +109,10 @@ private void registerCourses(String studentId)
 		System.out.println(" Registration is already completed");
 		return;
 	}
+
+
 	
-	int count = 0;
+	int count = viewRegisteredCourse(studentId).size();
 
 //	System.out.println("Student crs 113: " + count);
 	while(count < 6)
@@ -432,7 +434,7 @@ private void make_payment(String studentId)
 				{
 					notificationInterface.sendNotification(NotificationTypeConstant.PAYED, studentId, mode, fee);
 					System.out.println("Payment Successful by StudentId :" + studentId);
-					registrationInterface.setPaymentStatus(studentId);				
+					registrationInterface.makePayment(studentId, mode.toString(), fee);
 				}
 				catch (Exception e) 
 				{

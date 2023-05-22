@@ -42,9 +42,9 @@ public class AdminCRSMenu {
 	public void createMenu(){
 		
 		while(CRSApplication.loggedin) {
-			System.out.println("*****************************");
-			System.out.println("**********Admin Menu*********");
-			System.out.println("*****************************");
+			System.out.println("------------------------------");
+			System.out.println("----------ADMIN MENU----------");
+			System.out.println("------------------------------");
 			System.out.println("1. View course in catalog");
 			System.out.println("2. Add Course to catalog");
 			System.out.println("3. Delete Course from catalog");
@@ -54,7 +54,7 @@ public class AdminCRSMenu {
 			System.out.println("7. Assign Professor To Courses");
 			System.out.println("8. Generate Report Card");
 			System.out.println("9. Logout");
-			System.out.println("*****************************");
+			System.out.println("-----------------------------");
 			
 			int choice = in.nextInt();
 			
@@ -315,14 +315,16 @@ public class AdminCRSMenu {
 		String courseName = in.next();
 
 		System.out.println("Enter Professor ID:");
-		String professorId = in.next();
+		String profId = in.next();
 
-		
-		Course course = new Course();
+
+
+
+		Course course = new Course(courseCode, courseName, profId, 10);
 		course.setCourseCode(courseCode);
 		course.setCourseName(courseName);
-		course.setInstructorId(professorId);
 		course.setSeats(10);
+		course.setInstructorId(profId);
 //		System.out.println("AdminCRSMenu 321");
 		
 		try {

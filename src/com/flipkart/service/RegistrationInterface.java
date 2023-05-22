@@ -82,6 +82,8 @@ public interface RegistrationInterface {
 
 	public boolean isReportGenerated(String studentId) throws SQLException;
 
-	public void setPaymentStatus(String studentId) throws SQLException;
+	public void makePayment(String studentId, String mode, double fee) throws SQLException;
+
+//	public void setPaymentStatus(String studentId);
 	
 }

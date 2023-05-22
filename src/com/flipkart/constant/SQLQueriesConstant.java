@@ -34,8 +34,8 @@ public class SQLQueriesConstant {
 		public static final String CALCULATE_FEES  = "select sum(courseFee) from course where courseCode in (select courseCode from registeredcourse where studentId = ?);";
 		public static final String VIEW_GRADE = "select course.courseCode,course.courseName,registeredcourse.grade from course inner join registeredcourse on course.courseCode = registeredcourse.courseCode where registeredcourse.studentId = ?;";	
 		public static final String GET_SEATS = "select seats from course where courseCode = ?;";
-		public static final String INSERT_PAYMENT = "insert into payment(studentId,modeofPayment,referenceId,amount) values(?,?,?,?);";
-		public static final String INSERT_NOTIFICATION = "insert into notification(studentId,type,referenceId) values(?,?,?);";
+		public static final String INSERT_PAYMENT = "insert into Payment(studentId,modeofPayment,ReferenceId,amount) values(?,?,?,?);";
+		public static final String INSERT_NOTIFICATION = "insert into notification(studentId,type,NotificationId) values(?,?,?);";
 		public static final String GET_NOTIFICATION = "select * from notification where referenceId = ?;";
 		public static final String GET_REGISTRATION_STATUS=" select isRegistered from student where studentId = ? ";
 		public static final String SET_REGISTRATION_STATUS="update student set isRegistered = true  where studentId=?";
@@ -43,6 +43,7 @@ public class SQLQueriesConstant {
 		public static final String SET_PAYMENT_STATUS="update student set isPaid = true  where studentId=?";
 		public static final String NUMBER_OF_REGISTERED_COURSES=" select studentId from registeredcourse where studentId = ? ";
 		public static final String IS_REGISTERED=" select courseCode from registeredcourse where courseCode=? and studentId=? ";
+		public static final String DE_REGISTER_QUERY=" update student set isRegistered=false where studentId=? ";
 		
 		public static final String GET_GRADES = "select grade from registeredcourse where studentId=?";
 		

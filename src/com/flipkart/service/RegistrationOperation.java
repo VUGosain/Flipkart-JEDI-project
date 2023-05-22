@@ -187,8 +187,8 @@ public class RegistrationOperation implements RegistrationInterface {
 	}
 
 	@Override
-	public void setPaymentStatus(String studentId) throws SQLException{
-		registrationDaoInterface.setPaymentStatus(studentId);
+	public void makePayment(String studentId, String mode, double fee) throws SQLException{
+		registrationDaoInterface.makePayment(studentId, mode, fee);
 		
 	}
 

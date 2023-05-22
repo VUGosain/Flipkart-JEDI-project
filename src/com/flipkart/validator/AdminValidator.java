@@ -3,7 +3,6 @@
  */
 package com.flipkart.validator;
 
-import java.sql.SQLOutput;
 import java.util.List;
 
 import com.flipkart.bean.*;
@@ -21,12 +20,9 @@ public class AdminValidator {
 	public static boolean isValidNewCourse(Course newCourse, List<Course> courseList) {
 		for(Course course : courseList) {
 			if(newCourse.getCourseCode().equalsIgnoreCase(course.getCourseCode())) {
-//				System.out.println(course.getCourseCode() + "REturning False");
-				System.out.println("admin validator 23: " + newCourse.getCourseCode() + course.getCourseCode());
-				return false; 
+				return false;
 			}
 		}
-//		System.out.println(newCourse.getCourseCode() + "REturning true");
 		return true;
 	}
 	

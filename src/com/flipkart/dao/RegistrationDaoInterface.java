@@ -12,7 +12,6 @@ import com.flipkart.bean.Grade;
 
 public interface RegistrationDaoInterface {
 	
-	
 	/**
 	 * Method to add course in database
 	 * @param courseCode
@@ -107,7 +106,7 @@ public interface RegistrationDaoInterface {
 	public boolean isReportGenerated(String studentId) throws SQLException;
 
 
-	public void setPaymentStatus(String studentId) throws SQLException;
+	public void makePayment(String studentId, String mode, double fee) throws SQLException;
 
 	
 }

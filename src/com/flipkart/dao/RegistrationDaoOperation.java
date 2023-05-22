@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 //import org.apache.log4j.Logger;
@@ -222,6 +223,10 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 				
 				stmt = conn.prepareStatement(SQLQueriesConstant.INCREMENT_SEAT_QUERY);
 				stmt.setString(1, courseCode);
+				stmt.execute();
+
+				stmt = conn.prepareStatement(SQLQueriesConstant.DE_REGISTER_QUERY);
+				stmt.setString(1, studentId);
 				stmt.execute();
 				
 				stmt.close();
@@ -532,10 +537,25 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 	}
 
 	@Override
-	public void setPaymentStatus(String studentId) throws SQLException {
+	public void makePayment(String studentId, String mode, double fee) throws SQLException {
 		Connection conn = DBUtils.getConnection();
 		try 
 		{
+			String ref_id = studentId + "_" + (new Date()).getTime();
+			stmt = conn.prepareStatement(SQLQueriesConstant.INSERT_NOTIFICATION);
+			stmt.setString(1, studentId);
+			stmt.setString(2, mode);
+			stmt.setString(3, ref_id);
+			stmt.executeUpdate();
+
+
+			stmt = conn.prepareStatement(SQLQueriesConstant.INSERT_PAYMENT);
+			stmt.setString(1, studentId);
+			stmt.setString(2, mode);
+			stmt.setString(3, ref_id);
+			stmt.setString(4, Double.toString(fee));
+			stmt.executeUpdate();
+
 			stmt = conn.prepareStatement(SQLQueriesConstant.SET_PAYMENT_STATUS);
 			stmt.setString(1, studentId);
 			stmt.executeUpdate();
@@ -543,6 +563,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		} 
 		catch (SQLException e) 
 		{
+			System.out.println(e.getMessage());
 //			logger.error(e.getMessage());
 
 		} 
