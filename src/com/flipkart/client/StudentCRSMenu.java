@@ -37,7 +37,7 @@ public class StudentCRSMenu {
 //				System.out.println("qwe 2");
 
 //			System.out.println("------------------------------------------------------------");
-			System.out.println("----------------------- Student Menu -----------------------");
+			System.out.println("------------------------- Student Menu -------------------------");
 //			System.out.println("------------------------------------------------------------");
 
 			System.out.println("0. Logout");
@@ -49,7 +49,7 @@ public class StudentCRSMenu {
 			System.out.println("6. View grade card");
 			System.out.println("7. Make Payment");
 //			System.out.println("------------------------------------------------------------");
-			System.out.println("Enter operation: ");
+			System.out.print("Enter operation: ");
 
 			int choice = sc.nextInt();
 //			    System.out.println("qwe 3" + choice);
@@ -117,7 +117,7 @@ private void registerCourses(String studentId)
 	int count = viewRegisteredCourse(studentId).size();
 
 //	System.out.println("Student crs 113: " + count);
-	while(count < 6)
+	while(count < 4)
 	{
 		try
 		{
@@ -126,9 +126,9 @@ private void registerCourses(String studentId)
 			if(courseList==null)
 				return;
 			
-			System.out.println("Enter Course Code: " + (count+1));
+			System.out.print("Enter Course Code (course " + (count+1) + "): ");
 			String courseCode = sc.next();
-//			System.out.println("yahan hai");
+			System.out.println("-------------------------- MY COURSES --------------------------");
 			if(registrationInterface.addCourse(courseCode,studentId,courseList))
 			{
 				System.out.println("Course " + courseCode + " registered sucessfully.");
@@ -139,18 +139,22 @@ private void registerCourses(String studentId)
 				System.out.println(" You have already registered for Course : " + courseCode);
 			}
 		}	
-		catch(CourseNotFoundException | CourseLimitExceededException | SQLException e)
+		catch(CourseLimitExceededException | SQLException e)
 		{
 			System.out.println(e.getMessage());
 		} catch (SeatNotAvailableException e) {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
 		}
+		catch (CourseNotFoundException e){
+			System.out.println(e.getMessage());
+			return;
+		}
 	}
 	
-	System.out.println("\n*******************************************************");
-	System.out.println("Registration Successful");
-	System.out.println("*******************************************************\n");
+//	System.out.println("\n*******************************************************");
+	System.out.println("Course Registration Successful!");
+//	System.out.println("*******************************************************\n");
 	
 	try {
 		registrationInterface.setRegistrationStatus(studentId);
@@ -250,7 +254,7 @@ private void dropCourse(String studentId) {
 		if(registeredCourseList==null)
 			return;
 		
-		System.out.println("Enter the Course Code : ");
+		System.out.print("Enter the Course Code: ");
 		String courseCode = sc.next();
 		
 		try

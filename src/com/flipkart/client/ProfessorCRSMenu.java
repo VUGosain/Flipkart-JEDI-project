@@ -28,7 +28,7 @@ public class ProfessorCRSMenu {
 		int input;
 		while (CRSApplication.loggedin) {
 //			System.out.println("------------------------------------------------------------");
-			System.out.println("---------------------- Professor Menu ----------------------");
+			System.out.println("------------------------ Professor Menu ------------------------");
 //			System.out.println("------------------------------------------------------------");
 			System.out.println("4. Logout");
 			System.out.println("1. View Courses");

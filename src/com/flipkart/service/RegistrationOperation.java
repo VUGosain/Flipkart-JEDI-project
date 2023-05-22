@@ -56,9 +56,9 @@ public class RegistrationOperation implements RegistrationInterface {
 
 //		System.out.println("this has to be there");
 
-		if (registrationDaoInterface.numOfRegisteredCourses(studentId) >= 6)
+		if (registrationDaoInterface.numOfRegisteredCourses(studentId) >= 4)
 		{	
-			throw new CourseLimitExceededException(6);
+			throw new CourseLimitExceededException(4);
 		}
 		else if (registrationDaoInterface.isRegistered(courseCode, studentId)) 
 		{
