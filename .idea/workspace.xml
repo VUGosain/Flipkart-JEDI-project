@@ -5,10 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="Vishal last commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/bean/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/bean/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/bean/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/bean/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/ProfessorCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/ProfessorCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/GenderConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/GenderConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/PaymentModeConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/PaymentModeConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/RoleConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/RoleConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/NotificationDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/NotificationDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/NotificationDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/NotificationDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/CourseAlreadyRegisteredException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/CourseAlreadyRegisteredException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/CourseExistsAlreadyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/CourseExistsAlreadyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotAssignedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotAssignedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotAvailableException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotAvailableException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotDeletedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotDeletedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/CourseNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/GradeNotAllotedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/GradeNotAllotedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/ProfessorIdAlreadyInUseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/ProfessorIdAlreadyInUseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/StudentIdAlreadyInUseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/StudentIdAlreadyInUseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/UserIdAlreadyInUseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/UserIdAlreadyInUseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/exception/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/ProfessorOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/ProfessorOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/StudentInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/StudentInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/StudentOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/StudentOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/validator/ProfessorValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/validator/ProfessorValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +65,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CRSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.flipkart.client.CRSApplication" />
