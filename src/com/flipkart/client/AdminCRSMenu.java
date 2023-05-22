@@ -313,10 +313,15 @@ public class AdminCRSMenu {
 		
 		System.out.println("Enter Course Name:");
 		String courseName = in.next();
+
+		System.out.println("Enter Professor ID:");
+		String professorId = in.next();
+
 		
-		Course course = new Course(courseCode, courseName,"", 10);
+		Course course = new Course();
 		course.setCourseCode(courseCode);
 		course.setCourseName(courseName);
+		course.setInstructorId(professorId);
 		course.setSeats(10);
 //		System.out.println("AdminCRSMenu 321");
 		

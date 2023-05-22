@@ -6,20 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="debug info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/AdminCRSMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/client/AdminCRSMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/CRSApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/client/CRSApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/StudentCRSMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/client/StudentCRSMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/RegistrationDaoOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/dao/RegistrationDaoOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/AdminOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/service/AdminOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/validator/AdminValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/validator/AdminValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/CRSApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/CRSApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,26 +36,6 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="CRSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.flipkart.client.CRSApplication" />
-      <module name="CRS-Flipkart-JEDI-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.flipkart.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CRSApplication" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
