@@ -102,6 +102,7 @@ public class AdminOperation implements AdminInterface{
 //		System.out.println("??" + newCourse.getCourseCode());
 		
 		try {
+//			System.out.println(AdminValidator.isValidNewCourse(newCourse, courseList));
 			if(!AdminValidator.isValidNewCourse(newCourse, courseList)) {
 				System.out.println("courseCode: " + newCourse.getCourseCode() + " already present in catalog!");
 				throw new CourseExistsAlreadyException(newCourse.getCourseCode());

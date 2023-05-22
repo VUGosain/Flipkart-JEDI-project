@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="debug info">
+    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="merge conflict">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_24.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-Flipkart-JEDI-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CRS-Flipkart-JEDI-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/AdminCRSMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/client/AdminCRSMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/CRSApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/client/CRSApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/StudentCRSMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/client/StudentCRSMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/RegistrationDaoOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/dao/RegistrationDaoOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/flipkart/service/AdminOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/service/AdminOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/flipkart/validator/AdminValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/validator/AdminValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/CRSApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/CRSApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/constant/SQLQueriesConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vishal.gosain/Downloads/CRS-Flipkart-JEDI-Project-main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/vishal.gosain/Downloads/CRS-Flipkart-JEDI-Project-main",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="CRSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.flipkart.client.CRSApplication" />
