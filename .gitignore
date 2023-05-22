@@ -6,3 +6,4 @@ src/config.properties
 
 .classpath
 /.idea/
+*.iml
