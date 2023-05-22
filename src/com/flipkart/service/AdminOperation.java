@@ -98,7 +98,8 @@ public class AdminOperation implements AdminInterface{
 	@Override
 	public void addCourse(Course newCourse, List<Course> courseList) throws CourseExistsAlreadyException 
 	{
-		
+
+//		System.out.println("??" + newCourse.getCourseCode());
 		
 		try {
 			if(!AdminValidator.isValidNewCourse(newCourse, courseList)) {

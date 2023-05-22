@@ -357,7 +357,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			
 			while(resultSet.next()) {
 
-//				System.out.println("check1");
+				System.out.println("check1");
 				
 				Course course = new Course();
 				course.setCourseCode(resultSet.getString(1));

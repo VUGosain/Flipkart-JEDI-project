@@ -318,6 +318,7 @@ public class AdminCRSMenu {
 		course.setCourseCode(courseCode);
 		course.setCourseName(courseName);
 		course.setSeats(10);
+//		System.out.println("AdminCRSMenu 321");
 		
 		try {
 		adminOperation.addCourse(course, courseList);		
