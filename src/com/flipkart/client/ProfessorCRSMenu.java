@@ -104,7 +104,7 @@ public class ProfessorCRSMenu {
 			courseCode = in.nextLine();
 			System.out.println("Enter grade: ");
 			grade = in.nextLine();
-			if (!(ProfessorValidator.isValidStudent(enrolledStudents, studentId)
+			if ((ProfessorValidator.isValidStudent(enrolledStudents, studentId)
 			&& ProfessorValidator.isValidCourse(coursesEnrolled, courseCode))) {
 				professorInterface.addGrade(studentId, courseCode, grade);
 				System.out.println("GradeConstant added successfully for "+studentId);
