@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="debug info">
+    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="Course add functioning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/client/AdminCRSMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/client/AdminCRSMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/dao/AdminDaoOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/flipkart/validator/AdminValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/flipkart/validator/AdminValidator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684737564891</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Course add functioning">
+      <created>1684752613370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684752613370</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edited names" />
     <MESSAGE value="removed unnecessary documentation" />
     <MESSAGE value="debug info" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug info" />
+    <MESSAGE value="Course add functioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course add functioning" />
   </component>
 </project>
