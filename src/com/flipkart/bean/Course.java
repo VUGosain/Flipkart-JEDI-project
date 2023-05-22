@@ -3,10 +3,7 @@
  */
 package com.flipkart.bean;
 
-/**
- * @author Aditya
- *
- */
+
 public class Course 
 {
 	private String crsCode;

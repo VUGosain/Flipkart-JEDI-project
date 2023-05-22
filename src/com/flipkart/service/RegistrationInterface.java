@@ -13,12 +13,7 @@ import com.flipkart.exception.CourseLimitExceededException;
 import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.SeatNotAvailableException;
 
-/**
- * 
- * @author Aditya
- * Interface for Registration Operation
- * 
- */
+
 public interface RegistrationInterface {
 	
 		public boolean addCourse(String courseCode, String studentId, List<Course> availableCourseList)

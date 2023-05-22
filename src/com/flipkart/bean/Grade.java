@@ -3,10 +3,6 @@
  */
 package com.flipkart.bean;
 
-/**
- * @author Aditya
- *
- */
 public class Grade 
 {
 	private String crsCode;

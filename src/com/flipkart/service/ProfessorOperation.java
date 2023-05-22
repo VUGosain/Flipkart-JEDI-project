@@ -9,9 +9,7 @@ import com.flipkart.dao.ProfessorDaoInterface;
 import com.flipkart.dao.ProfessorDaoOperation;
 import com.flipkart.exception.GradeNotAllotedException;
 
-/**
- * @author Goenka
- */
+
 public class ProfessorOperation implements ProfessorInterface {
 	
 	private static volatile ProfessorOperation instance=null;

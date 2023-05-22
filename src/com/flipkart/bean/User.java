@@ -6,10 +6,7 @@ package com.flipkart.bean;
 import com.flipkart.constant.GenderConstant;
 import com.flipkart.constant.RoleConstant;
 
-/**
- * @author vivek
- *
- */
+
 public abstract class User {
 	private String userId;
 	private String name;

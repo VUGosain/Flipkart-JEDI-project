@@ -9,10 +9,7 @@ import com.flipkart.exception.*;
 
 import com.flipkart.bean.*;
 
-/**
- * @author Aditya
- *
- */
+
 public interface AdminInterface 
 {
 	

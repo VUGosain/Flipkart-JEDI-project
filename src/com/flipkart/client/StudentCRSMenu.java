@@ -16,10 +16,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * @author vijayrathod
- *
- */
+
 public class StudentCRSMenu {
 	
 	Scanner sc = new Scanner(System.in);

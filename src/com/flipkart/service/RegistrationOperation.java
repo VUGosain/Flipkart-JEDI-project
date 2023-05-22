@@ -14,11 +14,7 @@ import com.flipkart.exception.CourseNotFoundException;
 import com.flipkart.exception.SeatNotAvailableException;
 import com.flipkart.validator.StudentValidator;
 
-/**
- * @author Aditya
- * The Registration Operation provides the business logic for student registration.
- * 
- */
+
 public class RegistrationOperation implements RegistrationInterface {
 
 	private static volatile RegistrationOperation instance = null;

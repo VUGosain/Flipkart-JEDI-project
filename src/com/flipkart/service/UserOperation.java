@@ -4,12 +4,7 @@ import com.flipkart.dao.UserDaoInterface;
 import com.flipkart.dao.UserDaoOperation;
 import com.flipkart.exception.UserNotFoundException;
 
-/**
- * 
- * @author Goenka
- * Implementations of User Operations
- *
- */
+
 public class UserOperation implements UserInterface {
 	
 	private static volatile UserOperation instance=null;

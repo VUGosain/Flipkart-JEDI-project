@@ -29,10 +29,6 @@ import com.flipkart.service.NotificationOperation;
 import com.flipkart.service.RegistrationInterface;
 import com.flipkart.service.RegistrationOperation;
 
-/**
- * @author Goenka
- *
- */
 public class AdminCRSMenu {
 
 	AdminInterface adminOperation = AdminOperation.getInstance();

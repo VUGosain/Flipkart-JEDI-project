@@ -15,10 +15,6 @@ import com.flipkart.service.ProfessorOperation;
 import com.flipkart.validator.ProfessorValidator;
 
 
-/**
- * @author vivek
- *
- */
 public class ProfessorCRSMenu {
 	
 	ProfessorInterface professorInterface = ProfessorOperation.getInstance();

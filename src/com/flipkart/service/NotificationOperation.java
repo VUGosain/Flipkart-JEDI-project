@@ -10,10 +10,7 @@ import com.flipkart.constant.PaymentModeConstant;
 import com.flipkart.dao.NotificationDaoInterface;
 import com.flipkart.dao.NotificationDaoOperation;
 
-/**
- * @author vijayrathod
- *
- */
+
 public class NotificationOperation implements NotificationInterface{
 	
 	private static volatile NotificationOperation instance=null;

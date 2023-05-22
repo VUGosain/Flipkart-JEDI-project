@@ -3,10 +3,7 @@
  */
 package com.flipkart.bean;
 
-/**
- * @author Goenka
- *
- */
+
 public class EnrolledStudent {
 	String courseCode;
 	String courseName;

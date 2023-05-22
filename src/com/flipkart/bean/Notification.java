@@ -5,10 +5,7 @@ package com.flipkart.bean;
 
 import com.flipkart.constant.NotificationTypeConstant;
 
-/**
- * @author Aditya
- *
- */
+
 
 //GLOBAL VAR
 

@@ -4,12 +4,7 @@ package com.flipkart.service;
 import com.flipkart.constant.GenderConstant;
 import com.flipkart.exception.StudentNotRegisteredException;
 
-/**
- * 
- * @author Aditya
- * Interface for Student Operations
- *
- */
+
 public interface StudentInterface {
 	
 	/**

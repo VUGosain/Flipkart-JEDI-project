@@ -4,10 +4,7 @@
 package com.flipkart.bean;
 
 
-/*
- * @author Aditya
- *
- */
+
 
 import com.flipkart.constant.GradeConstant;
 

@@ -9,10 +9,7 @@ import java.util.List;
 
 import com.flipkart.bean.*;
 import com.flipkart.exception.GradeNotAllotedException;
-/**
- * @author vivek
- *
- */
+
 public interface ProfessorInterface {
 	
 	public boolean addGrade(String studentID, String courseID, String grade) throws GradeNotAllotedException;

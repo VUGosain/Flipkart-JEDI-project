@@ -10,10 +10,7 @@ import com.flipkart.constant.NotificationTypeConstant;
 import com.flipkart.constant.PaymentModeConstant;
 
 
-/**
- * @author vijayrathod
- *
- */
+
 public interface NotificationInterface {
 
     /**

@@ -12,10 +12,6 @@ import com.flipkart.bean.*;
 import com.flipkart.dao.AdminDaoInterface;
 import com.flipkart.dao.AdminDaoOperation;
 
-/**
- * @author Tanishq
- *
- */
 
 public class AdminOperation implements AdminInterface{
 	

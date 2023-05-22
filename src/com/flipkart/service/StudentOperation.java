@@ -9,12 +9,7 @@ import com.flipkart.bean.Student;
 import com.flipkart.client.CRSApplication;
 import com.flipkart.constant.GenderConstant;
 
-/**
- * 
- * @author JEDI-03
- * Implementations of Student Operations
- *
- */
+
 public class StudentOperation implements StudentInterface {
 	
 	private static volatile StudentOperation instance=null;
