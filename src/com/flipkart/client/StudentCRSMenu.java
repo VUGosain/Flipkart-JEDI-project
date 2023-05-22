@@ -109,8 +109,10 @@ private void registerCourses(String studentId)
 		System.out.println(" Registration is already completed");
 		return;
 	}
+
+
 	
-	int count = 0;
+	int count = viewRegisteredCourse(studentId).size();
 
 //	System.out.println("Student crs 113: " + count);
 	while(count < 6)

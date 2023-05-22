@@ -223,6 +223,10 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 				stmt = conn.prepareStatement(SQLQueriesConstant.INCREMENT_SEAT_QUERY);
 				stmt.setString(1, courseCode);
 				stmt.execute();
+
+				stmt = conn.prepareStatement(SQLQueriesConstant.DE_REGISTER_QUERY);
+				stmt.setString(1, studentId);
+				stmt.execute();
 				
 				stmt.close();
 				
