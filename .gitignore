@@ -3,3 +3,6 @@
 /bin/
 
 src/config.properties
+
+.classpath
+/.idea/
