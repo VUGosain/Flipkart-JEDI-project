@@ -184,6 +184,7 @@ public class ProfessorDaoOperation implements ProfessorDaoInterface {
 		}
 		catch(SQLException e)
 		{
+			System.out.println(e.getMessage());
 //			logger.error(e.getMessage());
 		}
 		finally

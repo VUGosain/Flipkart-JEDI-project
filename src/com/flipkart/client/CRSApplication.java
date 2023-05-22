@@ -36,39 +36,34 @@ public class CRSApplication {
 		//create the main menu
 		createMainMenu();
 		userInput=sc.nextInt();
-		try
-		{
+		try {
 			
 		//until user do not exit the application
-		while(userInput!=4)
-		{
-			switch(userInput)
-			{	
-				case 1:
-					//login
+			while (userInput != 0) {
+				switch (userInput) {
+					case 1:
+						//login
 //					System.out.println("qwe 1");
-					crsApplication.loginUser();
-					break;
-				case 2:
-					//student registration
-					crsApplication.registerStudent();
-					break;	
-				case 3:
-					crsApplication.updatePassword();
-					break;
-				default:
-					System.out.println("Invalid Input");
+						crsApplication.loginUser();
+						break;
+					case 2:
+						//student registration
+						crsApplication.registerStudent();
+						break;
+					case 3:
+						crsApplication.updatePassword();
+						break;
+					default:
+						System.out.println("Invalid Input");
+				}
+				createMainMenu();
+				userInput = sc.nextInt();
 			}
-			createMainMenu();
-			userInput=sc.nextInt();
 		}
+		catch(Exception ex) {
+			System.out.println("Error occurred " + ex);
 		}
-		catch(Exception ex)
-		{
-			System.out.println("Error occured "+ex);
-		}
-		finally
-		{
+		finally {
 			sc.close();
 		}
 	}
@@ -76,21 +71,22 @@ public class CRSApplication {
 	/**
 	 * Method to Create Main Menu
 	 */
-	public static void createMainMenu()
-	{
-		System.out.println("----------Welcome to Course Management System---------");
+	public static void createMainMenu(){
+//		System.out.println("------------------------------------------------------------");
+		System.out.println("------------ Welcome to Course Registration System ------------");
+//		System.out.println("------------------------------------------------------------");
+		System.out.println("0. Exit");
 		System.out.println("1. Login");
 		System.out.println("2. Student Registration");
 		System.out.println("3. Update password");
-		System.out.println("4. Exit");
-		System.out.println("Enter user input");
+//		System.out.println("------------------------------------------------------------");
+		System.out.print("Enter operation: ");
 	}
 	
 	/**
-	 * Method for Login function2ality
+	 * Method for Login functionality
 	 */
-	public void loginUser()
-	{
+	public void loginUser(){
 		//multiple exceptions are possible
 		//invalid credential exception
 		//user not found exception
@@ -98,21 +94,21 @@ public class CRSApplication {
 		Scanner in = new Scanner(System.in);
 
 		String userId,password;
-		try
-		{
-			System.out.println("-----------------Login------------------");
-			System.out.println("Email");
+		try{
+//			System.out.println("------------------------------------------------------------");
+			System.out.println("---------------------------- Login -----------------------------");
+//			System.out.println("------------------------------------------------------------");
+			System.out.print("Enter user ID: ");
 			userId = in.next();
-			System.out.println("Password:");
+			System.out.print("Enter password: ");
 			password = in.next();
 			loggedin = userInterface.verifyCredentials(userId, password);
 			
 			//2 cases1
-			
-			
+
+
 			//true->role->student->approved
-			if(loggedin)
-			{
+			if(loggedin){
 				 
 				 DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");  
 				 
@@ -155,14 +151,12 @@ public class CRSApplication {
 				
 				
 			}
-			else
-			{
+			else {
 				System.out.println("Invalid Credentials!");
 			}
 			
 		}
-		catch(UserNotFoundException ex)
-		{
+		catch(UserNotFoundException ex) {
 			System.out.println(ex.getMessage());
 		}
 		
@@ -181,14 +175,16 @@ public class CRSApplication {
 		try
 		{
 			//input all the student details
-			System.out.println("---------------Student Registration-------------");
-			System.out.println("Name:");
+//			System.out.println("------------------------------------------------------------");
+			System.out.println("---------------------- Student Registration --------------------");
+//			System.out.println("------------------------------------------------------------");
+			System.out.print("Enter name: ");
 			name=sc.nextLine();
-			System.out.println("Email:");
+			System.out.println("Enter email: ");
 			userId=sc.next();
-			System.out.println("Password:");
+			System.out.println("Enter password: ");
 			password=sc.next();
-			System.out.println("GenderConstant: \t 1: Male \t 2.Female\t 3.Other");
+			System.out.print("Gender: \t 1: Male \t 2.Female\t 3.Other : ");
 			genderV=sc.nextInt();
 			sc.nextLine();
 			
@@ -208,12 +204,12 @@ public class CRSApplication {
 				gender=GenderConstant.OTHER;
 			}
 			
-			System.out.println("Branch:");
+			System.out.println("Enter branch: ");
 			branchName=sc.nextLine();
-			System.out.println("Batch:");
+			System.out.println("Enter batch: ");
 			batch=sc.nextInt();
 			sc.nextLine();
-			System.out.println("Address:");
+			System.out.println("Enter address: ");
 			address=sc.nextLine();
 			
 			
@@ -222,9 +218,8 @@ public class CRSApplication {
 			//notificationInterface.sendNotification(NotificationTypeConstant.REGISTRATION, newStudentId, null,0);
 			
 		}
-		catch(StudentNotRegisteredException ex)
-		{
-			System.out.println("Something went wrong! "+ex.getStudentName() +" not registered. Please try again");
+		catch(StudentNotRegisteredException ex) {
+			System.out.println("Something went wrong! " + ex.getStudentName() + " not registered. Please try again");
 		}
 		//sc.close();
 	}
@@ -236,7 +231,7 @@ public class CRSApplication {
 		Scanner in = new Scanner(System.in);
 		String userId,newPassword;
 		try {
-			System.out.println("------------------Update Password--------------------");
+			System.out.println("---------------------- Update Password ------------------------");
 			System.out.println("Email");
 			userId=in.next();
 			System.out.println("New Password:");
@@ -248,7 +243,7 @@ public class CRSApplication {
 			else
 				System.out.println("Something went wrong, please try again!");
 		} catch(Exception ex) {
-			System.out.println("Error Occured "+ex.getMessage());
+			System.out.println("Error Occurred "+ex.getMessage());
 		}
 		
 	}

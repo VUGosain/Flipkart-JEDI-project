@@ -27,15 +27,15 @@ public class ProfessorCRSMenu {
 		
 		int input;
 		while (CRSApplication.loggedin) {
-			System.out.println("--------------------------------");
-			System.out.println("-------Professor Menu-----------");
-			System.out.println("--------------------------------");
-			System.out.println("1. view Courses");
-			System.out.println("2. view Enrolled Students");
-			System.out.println("3. add Grades");
-			System.out.println("4. logout");
-			System.out.println("--------------------------------");
-			System.out.printf("Choose From Menu: ");
+//			System.out.println("------------------------------------------------------------");
+			System.out.println("---------------------- Professor Menu ----------------------");
+//			System.out.println("------------------------------------------------------------");
+			System.out.println("4. Logout");
+			System.out.println("1. View Courses");
+			System.out.println("2. View Enrolled Students");
+			System.out.println("3. Add Grades");
+//			System.out.println("------------------------------------------------------------");
+			System.out.print("Enter operation: ");
 			
 			input = in.nextInt();
 			switch (input) {
@@ -48,11 +48,11 @@ public class ProfessorCRSMenu {
 			case 3:
 				addGrade(profID);
 				break;
-			case 4:
+			case 0:
 				CRSApplication.loggedin = false;
 				return;
 			default:
-				System.out.println("Please select appropriate option...");
+				System.out.println("Invalid Operation");
 			}
 		}
 		in.close();

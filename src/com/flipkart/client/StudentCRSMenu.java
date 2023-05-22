@@ -35,21 +35,23 @@ public class StudentCRSMenu {
 		while(CRSApplication.loggedin) {
 
 //				System.out.println("qwe 2");
-			
-				System.out.println("*****************************");
-				System.out.println("**********Student Menu*********");
-				System.out.println("*****************************");
-				System.out.println("1. Course Registration");
-				System.out.println("2. Add Course");
-				System.out.println("3. Drop Course");
-				System.out.println("4. View Course");
-				System.out.println("5. View Registered Courses");
-				System.out.println("6. View grade card");
-				System.out.println("7. Make Payment");
-				System.out.println("8. Logout");
-				System.out.println("*****************************");
-			
-				int choice = sc.nextInt();
+
+//			System.out.println("------------------------------------------------------------");
+			System.out.println("----------------------- Student Menu -----------------------");
+//			System.out.println("------------------------------------------------------------");
+
+			System.out.println("0. Logout");
+			System.out.println("1. Course Registration");
+			System.out.println("2. Add Course");
+			System.out.println("3. Drop Course");
+			System.out.println("4. View Available Courses");
+			System.out.println("5. View Registered Courses");
+			System.out.println("6. View grade card");
+			System.out.println("7. Make Payment");
+//			System.out.println("------------------------------------------------------------");
+			System.out.println("Enter operation: ");
+
+			int choice = sc.nextInt();
 //			    System.out.println("qwe 3" + choice);
 				switch (choice) {
 				
@@ -81,12 +83,12 @@ public class StudentCRSMenu {
 					make_payment(studentId);
 					break;
 					
-				case 8:
+				case 0:
 					CRSApplication.loggedin = false;
 					break;			
 					
 				default:
-					System.out.println("Incorrect Choice!");
+					System.out.println("Invalid operation!");
 		
 		
 			}
