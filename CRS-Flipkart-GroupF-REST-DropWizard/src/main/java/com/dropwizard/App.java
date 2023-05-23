@@ -5,7 +5,9 @@ package com.dropwizard;
  *
  */
 
+import com.flipkart.rest.CRSApplicationRestController;
 import com.dropwizard.rest.EmployeeRESTController;
+
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
@@ -28,6 +30,7 @@ public class App extends Application<Configuration> {
         LOGGER.info("Registering REST resources");
         //  e.jersey().register(new EmployeeRESTController(e.getValidator()));
         e.jersey().register(new HelloRestController());
+        e.jersey().register(new CRSApplicationRestController());
         e.jersey().register(new EmployeeRESTController(e.getValidator()));
     }
 
