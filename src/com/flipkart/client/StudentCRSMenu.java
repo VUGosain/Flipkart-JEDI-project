@@ -118,7 +118,6 @@ public class StudentCRSMenu {
 
                 System.out.print("Enter Course Code (course " + (count + 1) + "): ");
                 String courseCode = sc.next();
-                System.out.println("-------------------------- MY COURSES --------------------------");
                 if (registrationInterface.addCourse(courseCode, studentId, courseList)) {
                     System.out.println("Course " + courseCode + " registered sucessfully.");
                     count++;
@@ -262,6 +261,7 @@ public class StudentCRSMenu {
             return null;
         }
 
+        System.out.println("---------------------- AVAILABLE COURSES -----------------------");
 
         System.out.println(String.format("%-20s %-20s %-20s %-20s", "COURSE CODE", "COURSE NAME", "INSTRUCTOR", "SEATS"));
         for (Course obj : course_available) {
@@ -290,7 +290,7 @@ public class StudentCRSMenu {
             System.out.println("You haven't registered for any course");
             return null;
         }
-
+        System.out.println("-------------------------- MY COURSES --------------------------");
         System.out.println(String.format("%-20s %-20s %-20s", "COURSE CODE", "COURSE NAME", "INSTRUCTOR"));
 
         for (Course obj : course_registered) {
