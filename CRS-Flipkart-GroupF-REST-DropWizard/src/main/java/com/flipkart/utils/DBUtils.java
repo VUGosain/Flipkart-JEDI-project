@@ -36,24 +36,20 @@ public class DBUtils {
             }
         } else {
             try {
-                //System.out.println("Connection was NULL...");
-                Properties prop = new Properties();
-                InputStream inputStream = DBUtils.class.getClassLoader().getResourceAsStream("./config.properties");
-                prop.load(inputStream);
-                String driver = prop.getProperty("driver");
-                String url = prop.getProperty("url");
-                String user = prop.getProperty("user");
-                String password = prop.getProperty("password");
+//                System.out.println("Connection was NULL...");
+//                Properties prop = new Properties();
+//                InputStream inputStream = DBUtils.class.getClassLoader().getResourceAsStream("./config.properties");
+//                prop.load(inputStream);
+                String driver = "com.mysql.cj.jdbc.Driver";
+                String url = "jdbc:mysql://localhost:3306/CRSDatabase";
+                String user = "root";
+                String password = "Fk!_191231";
                 //System.out.println(driver + url + user + password);
                 Class.forName(driver);
                 connection = DriverManager.getConnection(url, user, password);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
                 e.printStackTrace();
             }
             return connection;

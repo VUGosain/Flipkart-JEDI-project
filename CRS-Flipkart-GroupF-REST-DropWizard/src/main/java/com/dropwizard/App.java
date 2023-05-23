@@ -6,6 +6,7 @@ package com.dropwizard;
  */
 
 import com.dropwizard.rest.EmployeeRESTController;
+import com.flipkart.bean.Admin;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
@@ -15,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.dropwizard.rest.HelloRestController;
+import com.flipkart.restcontroller.*;
 
 public class App extends Application<Configuration> {
     private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
@@ -28,7 +30,9 @@ public class App extends Application<Configuration> {
         LOGGER.info("Registering REST resources");
         //  e.jersey().register(new EmployeeRESTController(e.getValidator()));
         e.jersey().register(new HelloRestController());
-        e.jersey().register(new EmployeeRESTController(e.getValidator()));
+//        e.jersey().register(new EmployeeRESTController(e.getValidator()));
+        e.jersey().register(new UserRestAPI());
+        e.jersey().register(new AdminRestAPI());
     }
 
     public static void main(String[] args) throws Exception {
