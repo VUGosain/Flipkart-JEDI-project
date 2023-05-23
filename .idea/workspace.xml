@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="avantika last commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/ProfessorCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/ProfessorCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/AdminDaoOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/ProfessorDaoOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/RegistrationDaoOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/StudentDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/StudentDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/StudentDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/StudentDaoOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/dao/UserDaoOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/NotificationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/NotificationOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/ProfessorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/ProfessorInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/ProfessorOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/ProfessorOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/RegistrationOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/StudentOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/StudentOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/UserOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/UserOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/validator/AdminValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/validator/StudentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/validator/StudentValidator.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="avantika last commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +25,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/vishal.gosain/Downloads/CRS-Flipkart-JEDI-Project-main",
+    "last_opened_file_path": "/Users/avantika.mudumbai/Desktop/jedi/FinalProjectStructure/Flipkart-JEDI-project",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2"
