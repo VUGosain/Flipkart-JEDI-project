@@ -31,7 +31,7 @@ public class StudentDaoOperation implements StudentDaoInterface {
 
     /**
      * Method to make StudentDaoOperation Singleton
-     * @return
+     * @return Returns an object of the StudentDaoOperation class
      */
     public static StudentDaoOperation getInstance() {
         if (instance == null) {
@@ -47,7 +47,7 @@ public class StudentDaoOperation implements StudentDaoInterface {
      * Method to add student to database
      * @param student: student object containing all the fields
      * @return true if student is added, else false
-     * @throws StudentNotRegisteredException
+     * @throws StudentNotRegisteredException student not registered exception
      */
     @Override
     public String addStudent(Student student) throws StudentNotRegisteredException {
@@ -97,8 +97,8 @@ public class StudentDaoOperation implements StudentDaoInterface {
 
     /**
      * Method to retrieve Student Id from User Id
-     * @param userId
-     * @return Student Id
+     * @param userId user id
+     * @return Returns a string of the student id corresponding to the input user id
      */
     @Override
     public String getStudentId(String userId) {
@@ -121,7 +121,7 @@ public class StudentDaoOperation implements StudentDaoInterface {
 
     /**
      * Method to check if Student is approved
-     * @param studentId
+     * @param studentId student id
      * @return boolean indicating if student is approved
      */
     @Override

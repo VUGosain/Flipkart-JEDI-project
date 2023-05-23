@@ -24,8 +24,7 @@ public class RegistrationOperation implements RegistrationInterface {
 
     /**
      * Method to make Registration Operation Singleton
-     *
-     * @return
+     * @return Returns an object of RegistrationOperation class
      */
     public static RegistrationOperation getInstance() {
         if (instance == null) {
@@ -51,7 +50,6 @@ public class RegistrationOperation implements RegistrationInterface {
      * @throws SQLException                 sql exception
      */
     @Override
-
     public boolean addCourse(String courseCode, String studentId, List<Course> availableCourseList) throws CourseNotFoundException, CourseLimitExceededException, SeatNotAvailableException, SQLException {
 
 //		System.out.println("this has to be there");
@@ -73,13 +71,12 @@ public class RegistrationOperation implements RegistrationInterface {
 
     /**
      * Method to drop Course selected by student
-     *
-     * @param courseCode
-     * @param studentId
-     * @param registeredCourseList
+     * @param courseCode course code
+     * @param studentId student id
+     * @param registeredCourseList list of registered courses
      * @return boolean indicating if the course is dropped successfully
-     * @throws CourseNotFoundException
-     * @throws SQLException
+     * @throws CourseNotFoundException course not found exception
+     * @throws SQLException sql exception
      */
     @Override
 
@@ -95,10 +92,9 @@ public class RegistrationOperation implements RegistrationInterface {
     /**
      * Method for Fee Calculation for selected courses
      * Fee calculation for selected courses
-     *
-     * @param studentId
+     * @param studentId student id
      * @return Fee Student has to pay
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
 
@@ -109,10 +105,9 @@ public class RegistrationOperation implements RegistrationInterface {
 
     /**
      * Method to view grade card for students
-     *
-     * @param studentId
+     * @param studentId student id
      * @return List of Student's Grades
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
 
@@ -123,9 +118,9 @@ public class RegistrationOperation implements RegistrationInterface {
     /**
      * Method to view the list of available courses
      *
-     * @param studentId
+     * @param studentId student id
      * @return List of courses
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
 
@@ -135,13 +130,11 @@ public class RegistrationOperation implements RegistrationInterface {
 
     /**
      * Method to view the list of courses registered by the student
-     *
-     * @param studentId
+     * @param studentId student id
      * @return List of courses
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
-
     public List<Course> viewRegisteredCourses(String studentId) throws SQLException {
         return registrationDaoInterface.viewRegisteredCourses(studentId);
     }
@@ -149,9 +142,9 @@ public class RegistrationOperation implements RegistrationInterface {
     /**
      * Method to check student registration status
      *
-     * @param studentId
+     * @param studentId student id
      * @return boolean indicating if the student's registration status
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
 
@@ -162,8 +155,8 @@ public class RegistrationOperation implements RegistrationInterface {
     /**
      * Method to set student registration status
      *
-     * @param studentId
-     * @throws SQLException
+     * @param studentId student id
+     * @throws SQLException sql exception
      */
     @Override
 
@@ -172,18 +165,37 @@ public class RegistrationOperation implements RegistrationInterface {
 
     }
 
+    /**
+     * Method to check the status of report card generation
+     * @param studentId student id
+     * @return Returns a boolean corresponding to the status
+     * @throws SQLException sql exception
+     */
     @Override
     public boolean isReportGenerated(String studentId) throws SQLException {
 
         return registrationDaoInterface.isReportGenerated(studentId);
     }
 
+    /**
+     * Method to get payment status
+     * @param studentId student id
+     * @return Returns a boolean corresponing to the payment status
+     * @throws SQLException sql exception
+     */
     @Override
     public boolean getPaymentStatus(String studentId) throws SQLException {
         return registrationDaoInterface.getPaymentStatus(studentId);
 
     }
 
+    /**
+     * Method to make and record a payment
+     * @param studentId student id
+     * @param mode mode
+     * @param fee fee
+     * @throws SQLException sql exception
+     */
     @Override
     public void makePayment(String studentId, String mode, double fee) throws SQLException {
         registrationDaoInterface.makePayment(studentId, mode, fee);

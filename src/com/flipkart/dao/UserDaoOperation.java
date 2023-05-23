@@ -38,7 +38,6 @@ public class UserDaoOperation implements UserDaoInterface {
 
     /**
      * Method to update password of user in DataBase
-     *
      * @param userId      user id
      * @param newPassword password
      * @return Update Password operation Status
@@ -73,11 +72,10 @@ public class UserDaoOperation implements UserDaoInterface {
 
     /**
      * Method to verify credentials of Users from DataBase
-     *
-     * @param userId
-     * @param password
+     * @param userId user id
+     * @param password password
      * @return Verify credentials operation status
-     * @throws UserNotFoundException
+     * @throws UserNotFoundException user not found exception
      */
     @Override
     public boolean verifyCredentials(String userId, String password) throws UserNotFoundException {
@@ -115,8 +113,7 @@ public class UserDaoOperation implements UserDaoInterface {
 
     /**
      * Method to update password of user in DataBase
-     *
-     * @param userID
+     * @param userID user id
      * @return Update Password operation Status
      */
     @Override
@@ -127,8 +124,7 @@ public class UserDaoOperation implements UserDaoInterface {
 
     /**
      * Method to get RoleConstant of User from DataBase
-     *
-     * @param userId
+     * @param userId user id
      * @return RoleConstant
      */
     @Override

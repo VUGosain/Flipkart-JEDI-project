@@ -13,8 +13,8 @@ public class AdminValidator {
 
     /**
      * Method to validate if newCourse is not already present in catalog
-     * @param newCourse
-     * @param courseList
+     * @param newCourse new course
+     * @param courseList course list
      * @return if newCourse is not already present in catalog
      */
     public static boolean isValidNewCourse(Course newCourse, List<Course> courseList) {
@@ -28,8 +28,8 @@ public class AdminValidator {
 
     /**
      * Method to validate if dropCourse is already present in catalog
-     * @param dropCourseCode
-     * @param courseList
+     * @param dropCourseCode drop course code
+     * @param courseList course list
      * @return if dropCourse is already present in catalog
      */
     public static boolean isValidDropCourse(String dropCourseCode, List<Course> courseList) {
@@ -43,8 +43,8 @@ public class AdminValidator {
 
     /**
      * Method to validate if studentId is still unapproved
-     * @param studentId
-     * @param studentList
+     * @param studentId student id
+     * @param studentList student list
      * @return if studentId is still unapproved
      */
     public static boolean isValidUnapprovedStudent(String studentId, List<Student> studentList) {

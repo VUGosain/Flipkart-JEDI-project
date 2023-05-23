@@ -21,6 +21,7 @@ public class ProfessorCRSMenu {
     ProfessorInterface professorInterface = ProfessorOperation.getInstance();
 
     /**
+     * print available operations for the professor
      * @param profID id of the professor
      */
     public void createMenu(String profID) {
@@ -59,6 +60,10 @@ public class ProfessorCRSMenu {
         in.close();
     }
 
+    /**
+     * view list of students enrolled in a course
+     * @param profID professor id
+     */
     public void viewEnrolledStudents(String profID) {
         System.out.println(String.format("%20s %20s %20s", "COURSE CODE", "COURSE NAME", "Student"));
         try {
@@ -73,6 +78,10 @@ public class ProfessorCRSMenu {
         }
     }
 
+    /**
+     * get courses assigned to a professor
+     * @param profId professor id
+     */
     public void getCourses(String profId) {
         try {
             List<Course> coursesEnrolled = professorInterface.viewCourses(profId);
@@ -85,6 +94,10 @@ public class ProfessorCRSMenu {
         }
     }
 
+    /**
+     * add grade for a course and student
+     * @param profId professor id
+     */
     public void addGrade(String profId) {
         Scanner in = new Scanner(System.in);
 

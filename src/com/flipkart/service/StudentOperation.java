@@ -23,7 +23,7 @@ public class StudentOperation implements StudentInterface {
     /**
      * Method to make StudentOperation Singleton
      *
-     * @return
+     * @return returns an object of StudentOperation class
      */
     public static StudentOperation getInstance() {
         if (instance == null) {
@@ -67,7 +67,7 @@ public class StudentOperation implements StudentInterface {
     /**
      * Method to get Student ID from User ID
      *
-     * @param userId
+     * @param userId user id
      * @return Student ID
      */
     @Override
@@ -80,7 +80,7 @@ public class StudentOperation implements StudentInterface {
     /**
      * Method to check if student is approved by Admin or not
      *
-     * @param studentId
+     * @param studentId student id
      * @return boolean indicating if student is approved
      */
     @Override

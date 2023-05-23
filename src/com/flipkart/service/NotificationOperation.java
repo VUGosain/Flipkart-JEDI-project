@@ -46,16 +46,18 @@ public class NotificationOperation implements NotificationInterface {
 
     }
 
+    /**
+     * Method to send a notification of a payment
+     * @param type:          type of the notification to be sent
+     * @param studentId:     student to be notified
+     * @param modeOfPayment: payment mode used
+     * @param amount:        amount to be payed
+     * @return Returns the SUCESS/ERROR code
+     */
     @Override
     public int sendNotification(NotificationTypeConstant type, String studentId, PaymentModeConstant modeOfPayment, double amount) {
         // TODO Auto-generated method stub
         return 0;
-    }
-
-    @Override
-    public UUID getReferenceId(int notificationId) {
-        // TODO Auto-generated method stub
-        return null;
     }
 
     /**
@@ -63,6 +65,13 @@ public class NotificationOperation implements NotificationInterface {
      * @param notificationId: notification id added in the database
      * @return transaction id of the payment
      */
+    @Override
+    public UUID getReferenceId(int notificationId) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+
 
 
 }

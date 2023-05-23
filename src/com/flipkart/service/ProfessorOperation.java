@@ -22,8 +22,7 @@ public class ProfessorOperation implements ProfessorInterface {
 
     /**
      * Method to make ProfessorOperation Singleton
-     *
-     * @return
+     * @return Returns a ProfessorOperation class object
      */
     public static ProfessorOperation getInstance() {
         if (instance == null) {
@@ -38,10 +37,9 @@ public class ProfessorOperation implements ProfessorInterface {
 
     /**
      * Method to grade a Student
-     *
-     * @param studentId
-     * @param courseCode
-     * @param grade
+     * @param studentId student id
+     * @param courseCode course code
+     * @param grade grade
      * @return boolean indicating if grade is added or not
      * @throws GradeNotAllotedException grade not allotted
      */
@@ -59,7 +57,6 @@ public class ProfessorOperation implements ProfessorInterface {
 
     /**
      * Method to view all the enrolled students
-     *
      * @param profId: professor id
      * @return List of enrolled students
      */
@@ -78,7 +75,6 @@ public class ProfessorOperation implements ProfessorInterface {
 
     /**
      * Method to get list of all course a professor is teaching
-     *
      * @param profId: professor id
      * @return List of courses the professor is teaching
      */

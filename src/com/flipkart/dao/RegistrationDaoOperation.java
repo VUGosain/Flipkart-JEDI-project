@@ -32,8 +32,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Method to make RegistrationDaoOperation Singleton
-     *
-     * @return
+     * @return returns an object of RegistrationDaoOperation
      */
     public static RegistrationDaoOperation getInstance() {
         if (instance == null) {
@@ -45,6 +44,13 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
     }
 
 
+    /**
+     * Method to register a student to a course
+     * @param courseCode course code
+     * @param studentId student id
+     * @return Returns the status of the operation (registered/ encountered some error)
+     * @throws SQLException sql exception
+     */
     @Override
     public boolean addCourse(String courseCode, String studentId) throws SQLException {
 
@@ -77,10 +83,9 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Number of registered courses for a student
-     *
-     * @param studentId
+     * @param studentId student id
      * @return Number of registered courses for a student
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
     public int numOfRegisteredCourses(String studentId) throws SQLException {
@@ -116,10 +121,9 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Check if seat is available for that particular course
-     *
-     * @param courseCode
+     * @param courseCode course code
      * @return status of seat availablity
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
     public boolean seatAvailable(String courseCode) throws SQLException {
@@ -148,11 +152,10 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Method checks if the student is registered for that course
-     *
-     * @param courseCode
-     * @param studentId
+     * @param courseCode course code
+     * @param studentId student id
      * @return Students registration status
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
     public boolean isRegistered(String courseCode, String studentId) throws SQLException {
@@ -184,7 +187,6 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Drop Course selected by student
-     *
      * @param courseCode : code for selected course
      * @param studentId  student id
      * @return status of drop course operation
@@ -228,10 +230,9 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Method to retrieve fee for the selected courses from the database and calculate total fee
-     *
-     * @param studentId
+     * @param studentId student id
      * @return Fee Student has to pay
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
 
     @Override
@@ -259,10 +260,9 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Method to view grade card of the student
-     *
-     * @param studentId
+     * @param studentId student id
      * @return Studen's grade card
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
     public List<Grade> viewGradeCard(String studentId) throws SQLException {
@@ -296,10 +296,9 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Method to get the list of courses available from course catalog
-     *
-     * @param studentId
+     * @param studentId student id
      * @return list of courses
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
     public List<Course> viewCourses(String studentId) throws SQLException {
@@ -335,10 +334,9 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Method to get the list of courses registered by the student
-     *
-     * @param studentId
+     * @param studentId student id
      * @return list of courses registered by student
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
     public List<Course> viewRegisteredCourses(String studentId) throws SQLException {
@@ -370,9 +368,9 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
     /**
      * Method to retrieve Student's registration status
      *
-     * @param studentId
+     * @param studentId student id
      * @return Student's registration status
-     * @throws SQLException
+     * @throws SQLException sql exception
      */
     @Override
     public boolean getRegistrationStatus(String studentId) throws SQLException {
@@ -398,9 +396,8 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     /**
      * Method to set Student's registration status
-     *
-     * @param studentId
-     * @throws SQLException
+     * @param studentId student id
+     * @throws SQLException sql exception
      */
     @Override
     public void setRegistrationStatus(String studentId) throws SQLException {
@@ -420,6 +417,12 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     }
 
+    /**
+     * Method to check the status of a reported (is generated or not)
+     * @param studentId student id
+     * @return Returns a boolean corresponding to the status
+     * @throws SQLException sql exception
+     */
     @Override
     public boolean isReportGenerated(String studentId) throws SQLException {
         Connection conn = DBUtils.getConnection();
@@ -442,6 +445,12 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
         return status;
     }
 
+    /**
+     * Method to get payment status of a student
+     * @param studentId student id
+     * @return Returns a boolean corresponding to the status of the payment
+     * @throws SQLException sql exception
+     */
     @Override
     public boolean getPaymentStatus(String studentId) throws SQLException {
         {
@@ -468,6 +477,13 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface {
 
     }
 
+    /**
+     * Method to make and record a payment by a student for a semester
+     * @param studentId student id
+     * @param mode mode
+     * @param fee fee
+     * @throws SQLException sql exception
+     */
     @Override
     public void makePayment(String studentId, String mode, double fee) throws SQLException {
         Connection conn = DBUtils.getConnection();

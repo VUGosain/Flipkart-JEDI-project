@@ -17,7 +17,7 @@ public class StudentValidator {
      * @param studentId
      * @param registeredCourseList
      * @return Student Registration Status
-     * @throws CourseNotFoundException
+     * @throws CourseNotFoundException course not found exception
      */
     public static boolean isRegistered(String courseCode, String studentId, List<Course> registeredCourseList) throws CourseNotFoundException {
         for (Course course : registeredCourseList) {
@@ -33,8 +33,8 @@ public class StudentValidator {
     /**
      * Method to validate if couseCode is valid or not
      *
-     * @param courseCode
-     * @param availableCourseList
+     * @param courseCode course code
+     * @param availableCourseList available courses
      * @return couseCode is valid or not
      */
     public static boolean isValidCourseCode(String courseCode, List<Course> availableCourseList) {

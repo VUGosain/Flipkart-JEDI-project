@@ -12,9 +12,8 @@ public interface RegistrationDaoInterface {
 
     /**
      * Method to add course in database
-     *
-     * @param courseCode
-     * @param studentId
+     * @param courseCode course code
+     * @param studentId student id
      * @return boolean indicating if the course is added successfully
      */
     public boolean addCourse(String courseCode, String studentId) throws SQLException;
@@ -22,9 +21,8 @@ public interface RegistrationDaoInterface {
 
     /**
      * Drop Course selected by student
-     *
-     * @param courseCode
-     * @param studentId
+     * @param courseCode couse code
+     * @param studentId student id
      * @return boolean indicating if the course is dropped successfully
      */
 
@@ -32,8 +30,7 @@ public interface RegistrationDaoInterface {
 
     /**
      * Method to get the list of courses available from course catalog
-     *
-     * @param studentId
+     * @param studentId student id
      * @return list of Courses
      */
     public List<Course> viewCourses(String studentId) throws SQLException;
@@ -41,8 +38,7 @@ public interface RegistrationDaoInterface {
 
     /**
      * Method to View list of Registered Courses
-     *
-     * @param studentId
+     * @param studentId student id
      * @return list of Registered Courses
      */
     public List<Course> viewRegisteredCourses(String studentId) throws SQLException;
@@ -50,17 +46,14 @@ public interface RegistrationDaoInterface {
 
     /**
      * Method to view grade card of the student
-     *
-     * @param studentId
+     * @param studentId student id
      * @return GradeConstant Card
      */
-
     public double calculateFee(String studentId) throws SQLException;
 
     /**
      * Check if seat is available for that particular course
-     *
-     * @param courseCode
+     * @param courseCode course code
      * @return seat availability status
      */
     public boolean seatAvailable(String courseCode) throws SQLException;
@@ -68,8 +61,7 @@ public interface RegistrationDaoInterface {
     /**
      * Method to get the list of courses registered by the student
      * Number of registered courses for a student
-     *
-     * @param studentId
+     * @param studentId student id
      * @return Number of registered Courses
      */
     public int numOfRegisteredCourses(String studentId) throws SQLException;
@@ -77,8 +69,8 @@ public interface RegistrationDaoInterface {
     /**
      * Method checks if the student is registered for that course
      *
-     * @param courseCode
-     * @param studentId
+     * @param courseCode course code
+     * @param studentId student id
      * @return Students registration status
      */
     public boolean isRegistered(String courseCode, String studentId) throws SQLException;
@@ -86,8 +78,7 @@ public interface RegistrationDaoInterface {
 
     /**
      * Method to get student registration status
-     *
-     * @param studentId
+     * @param studentId student id
      * @return Student's registration status
      */
     public boolean getRegistrationStatus(String studentId) throws SQLException;
@@ -96,25 +87,36 @@ public interface RegistrationDaoInterface {
 
     /**
      * Method to set student registration status
-     *
-     * @param studentId
+     * @param studentId student id
      */
     public void setRegistrationStatus(String studentId) throws SQLException;
 
 
     /**
      * Method to view grade card of the student
-     *
-     * @param studentId
+     * @param studentId student id
      * @return Studen's grade card
-     * @throws SQLException
+     * @throws SQLException sql expression
      */
     public List<Grade> viewGradeCard(String studentId) throws SQLException;
 
 
+    /**
+     * Method to check if the report card generated for a student
+     * @param studentId student id
+     * @return boolean for the status of generation
+     * @throws SQLException sql expression
+     */
     public boolean isReportGenerated(String studentId) throws SQLException;
 
 
+    /**
+     * method to make and record a payment by a student for a semester
+     * @param studentId student id
+     * @param mode mode
+     * @param fee fee
+     * @throws SQLException sql exception
+     */
     public void makePayment(String studentId, String mode, double fee) throws SQLException;
 
 

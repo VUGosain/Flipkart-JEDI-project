@@ -34,6 +34,7 @@ public class AdminOperation implements AdminInterface {
         return instance;
     }
 
+
     AdminDaoInterface adminDaoOperation = AdminDaoOperation.getInstance();
 
 
@@ -138,7 +139,7 @@ public class AdminOperation implements AdminInterface {
 
     /**
      * @param professor : Professor Object storing details of a professor
-     * @throws ProfessorNotAddedException
+     * @throws ProfessorNotAddedException professor not added exception
      */
     @Override
     public void addProfessor(Professor professor) throws ProfessorNotAddedException, UserIdAlreadyInUseException {
@@ -152,10 +153,10 @@ public class AdminOperation implements AdminInterface {
 
     /**
      * Method to assign Course to a Professor
-     * @param courseCode
-     * @param professorId
-     * @throws CourseNotFoundException
-     * @throws UserNotFoundException
+     * @param courseCode course code
+     * @param professorId professor Id
+     * @throws CourseNotFoundException course not found exception
+     * @throws UserNotFoundException user not found exception
      */
     public void assignCourse(String courseCode, String professorId) throws CourseNotFoundException, UserNotFoundException {
         try {
@@ -165,6 +166,10 @@ public class AdminOperation implements AdminInterface {
         }
     }
 
+    /**
+     * Method to set the status report card generation
+     * @param Studentid student id
+     */
     @Override
     public void setGeneratedReportCardTrue(String Studentid) {
         adminDaoOperation.setGeneratedReportCardTrue(Studentid);

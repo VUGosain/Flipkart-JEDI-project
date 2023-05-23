@@ -416,6 +416,10 @@ public class AdminDaoOperation implements AdminDaoInterface {
         return professorList;
     }
 
+    /**
+     * Update status of the generation of report card for student.
+     * @param Studentid user id of the student
+     */
     public void setGeneratedReportCardTrue(String Studentid) {
         String sql1 = SQLQueriesConstant.SET_GENERATED_REPORT_CARD_TRUE;
         try {
@@ -427,6 +431,11 @@ public class AdminDaoOperation implements AdminDaoInterface {
         }
     }
 
+    /**
+     * Method to generate the grade card for a student
+     * @param Studentid Student id
+     * @return list of registered courses.
+     */
     @Override
     public List<RegisteredCourse> generateGradeCard(String Studentid) {
         List<RegisteredCourse> CoursesOfStudent = new ArrayList<RegisteredCourse>();

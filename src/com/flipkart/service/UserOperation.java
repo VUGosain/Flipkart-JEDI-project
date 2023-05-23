@@ -16,8 +16,7 @@ public class UserOperation implements UserInterface {
 
     /**
      * Method to make UserOperation Singleton
-     *
-     * @return
+     * @return Returns an object of UserOperation class
      */
     public static UserOperation getInstance() {
         if (instance == null) {
@@ -31,12 +30,10 @@ public class UserOperation implements UserInterface {
 
     /**
      * Method to update password of a user
-     *
-     * @param userID
-     * @param newPassword
+     * @param userID user id
+     * @param newPassword new password
      * @return boolean indicating if the password is updated successfully
      */
-
     @Override
     public boolean updatePassword(String userID, String newPassword) {
         return userDaoInterface.updatePassword(userID, newPassword);
@@ -45,12 +42,10 @@ public class UserOperation implements UserInterface {
 
     /**
      * Method to verify User credentials
-     *
-     * @param userID
-     * @param password
+     * @param userID user id
+     * @param password password
      * @return boolean indicating if user exists in the database
      */
-
     @Override
     public boolean verifyCredentials(String userID, String password) throws UserNotFoundException {
         //DAO class
@@ -63,8 +58,7 @@ public class UserOperation implements UserInterface {
 
     /**
      * Method to get role of a specific User
-     *
-     * @param userId
+     * @param userId user id
      * @return RoleConstant of the User
      */
     @Override

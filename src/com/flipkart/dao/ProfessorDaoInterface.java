@@ -39,7 +39,6 @@ public interface ProfessorDaoInterface {
 
     /**
      * Method to Get professor name by id
-     *
      * @param profId
      * @return Professor Id in string
      */

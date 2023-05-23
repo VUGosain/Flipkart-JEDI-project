@@ -27,6 +27,10 @@ public class StudentCRSMenu {
     private boolean is_registered;
 
 
+    /**
+     * print student menu
+     * @param studentId student id
+     */
     public void create_menu(String studentId) {
 
         is_registered = getRegistrationStatus(studentId);
@@ -97,9 +101,12 @@ public class StudentCRSMenu {
     }
 
 
+    /**
+     * register student for a course
+     * @param studentId student id
+     */
     private void registerCourses(String studentId) {
 
-//	System.out.println("hello1");
         if (is_registered) {
             System.out.println(" Registration is already completed");
             return;
@@ -108,7 +115,6 @@ public class StudentCRSMenu {
 
         int count = viewRegisteredCourse(studentId).size();
 
-//	System.out.println("Student crs 113: " + count);
         while (count < 4) {
             try {
                 List<Course> courseList = viewCourse(studentId);
@@ -135,9 +141,7 @@ public class StudentCRSMenu {
             }
         }
 
-//	System.out.println("\n*******************************************************");
         System.out.println("Course Registration Successful!");
-//	System.out.println("*******************************************************\n");
 
         try {
             registrationInterface.setRegistrationStatus(studentId);
@@ -145,58 +149,42 @@ public class StudentCRSMenu {
             System.out.println(e.getMessage());
         }
         is_registered = true;
-
-//    try 
-//    {
-//		registrationInterface.setRegistrationStatus(studentId);
-//	} 
-//    catch (SQLException e) 
-//    {
-//    	System.out.println(e.getMessage());
-//	}
     }
 
 
-    private void addCourse(String studentId) {
-        if (is_registered) {
-//		System.out.println("Testing1");
-            List<Course> availableCourseList = viewCourse(studentId);
 
-            if (availableCourseList == null) {
-//			System.out.println("Testing");
-                return;
-            }
-
-
-            try {
-                System.out.println("Enter Course Code : ");
-                String courseCode = sc.next();
-                if (registrationInterface.addCourse(courseCode, studentId, availableCourseList)) {
-                    System.out.println(" You have successfully registered for Course : " + courseCode);
-                } else {
-                    System.out.println(" You have already registered for Course : " + courseCode);
-                }
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            } catch (CourseNotFoundException e) {
-                System.out.println(e.getMessage());
-
-            } catch (CourseLimitExceededException e) {
-                System.out.println(e.getMessage());
-
-            } catch (SeatNotAvailableException e) {
-                System.out.println(e.getMessage());
-
-            }
-        } else {
-            System.out.println("Please complete registration");
-        }
-
-    }
+//    private void addCourse(String studentId) {
+//        if (is_registered) {
+////		System.out.println("Testing1");
+//            List<Course> availableCourseList = viewCourse(studentId);
+//
+//            if (availableCourseList == null) {
+////			System.out.println("Testing");
+//                return;
+//            }
+//
+//
+//            try {
+//                System.out.println("Enter Course Code : ");
+//                String courseCode = sc.next();
+//                if (registrationInterface.addCourse(courseCode, studentId, availableCourseList)) {
+//                    System.out.println(" You have successfully registered for Course : " + courseCode);
+//                } else {
+//                    System.out.println(" You have already registered for Course : " + courseCode);
+//                }
+//            } catch (CourseNotFoundException | CourseLimitExceededException | SeatNotAvailableException | SQLException e) {
+//                System.out.println(e.getMessage());
+//
+//            }
+//        } else {
+//            System.out.println("Please complete registration");
+//        }
+//
+//    }
 
     /**
      * Method to check if student is already registered
-     * @param studentId
+     * @param studentId student id
      * @return Registration Status
      */
     private boolean getRegistrationStatus(String studentId) {
@@ -211,7 +199,7 @@ public class StudentCRSMenu {
 
     /**
      * Drop Course
-     * @param studentId
+     * @param studentId student id
      */
     private void dropCourse(String studentId) {
         if (is_registered) {
@@ -241,7 +229,7 @@ public class StudentCRSMenu {
 
     /**
      * View all available Courses
-     * @param studentId
+     * @param studentId student id
      * @return List of available Courses
      */
     private List<Course> viewCourse(String studentId) {
@@ -274,7 +262,7 @@ public class StudentCRSMenu {
 
     /**
      * View Registered Courses
-     * @param studentId
+     * @param studentId student id
      * @return List of Registered Courses
      */
     private List<Course> viewRegisteredCourse(String studentId) {
@@ -304,7 +292,7 @@ public class StudentCRSMenu {
 
     /**
      * View grade card for particular student
-     * @param studentId
+     * @param studentId student id
      */
     private void viewGradeCard(String studentId) {
         List<Grade> grade_card = null;
@@ -334,6 +322,10 @@ public class StudentCRSMenu {
 
     }
 
+    /**
+     * make payment for a semester
+     * @param studentId student id
+     */
     private void make_payment(String studentId) {
 
         double fee = 400.0;

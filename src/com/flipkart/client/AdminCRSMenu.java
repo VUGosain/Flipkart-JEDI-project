@@ -105,6 +105,9 @@ public class AdminCRSMenu {
         }
     }
 
+    /**
+     * generate report card for a student
+     */
     private void generateReportCard() {
 
         List<Grade> grade_card = null;
@@ -330,7 +333,7 @@ public class AdminCRSMenu {
     /**
      * Method to add Course to catalog
      *
-     * @throws CourseExistsAlreadyException
+     * @throws CourseExistsAlreadyException course already exists
      */
     private void addCourseToCatalog() {
         List<Course> courseList = viewCoursesInCatalog();
@@ -364,7 +367,6 @@ public class AdminCRSMenu {
 
     /**
      * Method to display courses in catalog
-     *
      * @return List of courses in catalog
      */
     private List<Course> viewCoursesInCatalog() {
