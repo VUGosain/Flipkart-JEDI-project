@@ -57,10 +57,6 @@ public class DBUtils {
                 e.printStackTrace();
             } catch (SQLException e) {
                 e.printStackTrace();
-//            } catch (FileNotFoundException e) {
-//                e.printStackTrace();
-//            } catch (IOException e) {
-//                e.printStackTrace();
             }
             return connection;
         }
