@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc6256c4-d710-461e-83fe-46520b4c7b4b" name="Changes" comment="avantika last commit">
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/AdminCRSMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/service/AdminOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipkart/client/StudentCRSMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/CRS-Flpikart-Project-Repo-Group-F" />
     </key>
   </component>
   <component name="RunManager">

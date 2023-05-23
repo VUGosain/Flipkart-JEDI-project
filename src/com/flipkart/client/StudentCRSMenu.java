@@ -41,12 +41,12 @@ public class StudentCRSMenu {
 
             System.out.println("0. Logout");
             System.out.println("1. Course Registration");
-            System.out.println("2. Add Course");
-            System.out.println("3. Drop Course");
-            System.out.println("4. View Available Courses");
-            System.out.println("5. View Registered Courses");
-            System.out.println("6. View grade card");
-            System.out.println("7. Make Payment");
+//            System.out.println("2. Add Course");
+            System.out.println("2. Drop Course");
+            System.out.println("3. View Available Courses");
+            System.out.println("4. View Registered Courses");
+            System.out.println("5. View grade card");
+            System.out.println("6. Make Payment");
 //			System.out.println("------------------------------------------------------------");
             System.out.print("Enter operation: ");
 
@@ -58,27 +58,27 @@ public class StudentCRSMenu {
                     registerCourses(studentId);
                     break;
 
-                case 2:
-                    addCourse(studentId);
-                    break;
+//                case 2:
+//                    addCourse(studentId);
+//                    break;
 
-                case 3:
+                case 2:
                     dropCourse(studentId);
                     break;
 
-                case 4:
+                case 3:
                     viewCourse(studentId);
                     break;
 
-                case 5:
+                case 4:
                     viewRegisteredCourse(studentId);
                     break;
 
-                case 6:
+                case 5:
                     viewGradeCard(studentId);
                     break;
 
-                case 7:
+                case 6:
                     make_payment(studentId);
                     break;
 
