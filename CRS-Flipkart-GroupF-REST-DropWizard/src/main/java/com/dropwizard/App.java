@@ -5,8 +5,10 @@ package com.dropwizard;
  *
  */
 
+import com.flipkart.rest.CRSApplicationRestController;
 import com.dropwizard.rest.EmployeeRESTController;
 import com.flipkart.bean.Admin;
+
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
@@ -33,6 +35,8 @@ public class App extends Application<Configuration> {
 //        e.jersey().register(new EmployeeRESTController(e.getValidator()));
         e.jersey().register(new UserRestAPI());
         e.jersey().register(new AdminRestAPI());
+        e.jersey().register(new CRSApplicationRestController());
+        e.jersey().register(new EmployeeRESTController(e.getValidator()));
     }
 
     public static void main(String[] args) throws Exception {

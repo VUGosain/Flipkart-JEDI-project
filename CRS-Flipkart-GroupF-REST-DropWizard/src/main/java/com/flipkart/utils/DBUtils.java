@@ -36,14 +36,20 @@ public class DBUtils {
             }
         } else {
             try {
-//                System.out.println("Connection was NULL...");
+                //System.out.println("Connection was NULL...");
 //                Properties prop = new Properties();
-//                InputStream inputStream = DBUtils.class.getClassLoader().getResourceAsStream("./config.properties");
+//                InputStream inputStream = DBUtils.class.getClassLoader().getResourceAsStream("src/config.properties");
 //                prop.load(inputStream);
-                String driver = "com.mysql.cj.jdbc.Driver";
-                String url = "jdbc:mysql://localhost:3306/CRSDatabase";
-                String user = "root";
-                String password = "Fk!_191231";
+//                String driver = prop.getProperty("driver");
+//                String url = prop.getProperty("url");
+//                String user = prop.getProperty("user");
+//                String password = prop.getProperty("password");
+
+                String driver = MySQLCred.driver;
+                String url = MySQLCred.url;
+                String user =MySQLCred.sql_user;
+                String password = MySQLCred.sql_password;
+
                 //System.out.println(driver + url + user + password);
                 Class.forName(driver);
                 connection = DriverManager.getConnection(url, user, password);

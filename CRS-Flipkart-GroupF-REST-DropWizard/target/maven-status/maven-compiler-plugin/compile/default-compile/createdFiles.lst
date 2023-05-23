@@ -22,6 +22,11 @@ com/flipkart/exception/StudentNotRegisteredException.class
 com/flipkart/dao/UserDaoInterface.class
 com/flipkart/bean/Course.class
 com/flipkart/validator/AdminValidator.class
+<<<<<<< HEAD
+=======
+com/flipkart/utils/MySQLCred.class
+com/flipkart/rest/CRSApplicationRestController.class
+>>>>>>> d5ababd75c0168b8a4bd9119225920c0538417bd
 com/flipkart/exception/CourseLimitExceededException.class
 com/flipkart/exception/UserNotAddedException.class
 com/flipkart/client/ProfessorCRSMenu.class
@@ -59,14 +64,20 @@ com/flipkart/exception/CourseNotFoundException.class
 com/flipkart/exception/CourseAlreadyRegisteredException.class
 com/flipkart/service/NotificationOperation.class
 com/flipkart/bean/Scholarship.class
+<<<<<<< HEAD
 com/flipkart/restcontroller/AdminRestAPI.class
 com/flipkart/restcontroller/UserRestAPI$1.class
+=======
+>>>>>>> d5ababd75c0168b8a4bd9119225920c0538417bd
 com/flipkart/bean/Student.class
 com/flipkart/exception/CourseNotAvailableException.class
 com/flipkart/exception/GradeNotAllotedException.class
 com/flipkart/utils/DBUtils.class
 com/flipkart/constant/GradeConstant.class
+<<<<<<< HEAD
 com/flipkart/restcontroller/UserRestAPI.class
+=======
+>>>>>>> d5ababd75c0168b8a4bd9119225920c0538417bd
 com/flipkart/exception/SeatNotAvailableException.class
 com/dropwizard/rest/EmployeeRESTController.class
 com/flipkart/exception/ProfessorNotAddedException.class
