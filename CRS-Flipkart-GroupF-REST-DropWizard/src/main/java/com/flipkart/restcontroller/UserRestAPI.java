@@ -11,6 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.flipkart.bean.Student;
+import com.flipkart.constant.GenderConstant;
 import com.flipkart.constant.RoleConstant;
 import com.flipkart.exception.UserNotFoundException;
 import com.flipkart.service.StudentInterface;
@@ -136,7 +137,8 @@ public class UserRestAPI {
 
         try
         {
-            studentInterface.register(student.getName(), student.getUserId(), student.getPassword(), student.getGender(), student.getGradYear(), student.getDepartment(), student.getAddress());
+            System.out.println(student.getName() + student.getUserId()+ student.getPassword()+  student.getGradYear()+ student.getDepartment()+ student.getAddress());
+            studentInterface.register(student.getName(), student.getUserId(), student.getPassword(), GenderConstant.getName(1), student.getGradYear(), student.getDepartment(), student.getAddress());
         }
         catch(Exception ex)
         {

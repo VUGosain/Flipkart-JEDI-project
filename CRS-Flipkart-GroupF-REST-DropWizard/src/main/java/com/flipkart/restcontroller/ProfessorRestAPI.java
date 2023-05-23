@@ -78,14 +78,14 @@ public class ProfessorRestAPI {
 
 			@PathParam("profId") String profId,
 
-			@QueryParam("grade") String grade) throws ValidationException {
+			@PathParam("grade") String grade) throws ValidationException {
 
 		try {
 			List<EnrolledStudent> enrolledStudents = new ArrayList<EnrolledStudent>();
 			enrolledStudents = professorInterface.viewEnrolledStudents(profId);
 			List<Course> coursesEnrolled = new ArrayList<Course>();
 			coursesEnrolled = professorInterface.viewCourses(profId);
-			if (!(ProfessorValidator.isValidStudent(enrolledStudents, studentId)
+			if ((ProfessorValidator.isValidStudent(enrolledStudents, studentId)
 					&& ProfessorValidator.isValidCourse(coursesEnrolled, courseCode))) {
 				professorInterface.addGrade(studentId, courseCode, grade);
 			} else {

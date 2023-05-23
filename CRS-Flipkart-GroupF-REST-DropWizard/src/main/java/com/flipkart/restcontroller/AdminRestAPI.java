@@ -37,10 +37,6 @@ import com.flipkart.exception.UserNotFoundException;
 import com.flipkart.service.AdminInterface;
 import com.flipkart.service.AdminOperation;
 
-/**
- * @author Rag_Patel and Anurag
- *
- */
 @Path("/admin")
 public class AdminRestAPI {
 
