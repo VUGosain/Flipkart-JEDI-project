@@ -48,11 +48,23 @@ public interface AdminInterface {
      */
     public void approveStudent(String studentid, List<Student> studentlist) throws StudentNotFoundForApprovalException;
 
+    /**
+     * Approves all pending student requests
+     * @param studentList list of students to be approved
+     * @throws StudentNotFoundForApprovalException student not found
+     */
     public void approveAll(List<Student> studentList) throws StudentNotFoundForApprovalException;
 
     /**
      * @param professor professor object
      * @throws ProfessorNotAddedException professor not added
+     * @throws UserIdAlreadyInUseException user id already in use
+     */
+
+    /**
+     * Adds a new professor
+     * @param professor professor object
+     * @throws ProfessorNotAddedException unable to add professor
      * @throws UserIdAlreadyInUseException user id already in use
      */
 

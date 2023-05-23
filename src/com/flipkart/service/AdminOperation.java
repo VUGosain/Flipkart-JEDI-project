@@ -108,8 +108,8 @@ public class AdminOperation implements AdminInterface {
 
     /**
      * Method to approve a Student
-     * @param studentId
-     * @param studentList
+     * @param studentId student id
+     * @param studentList list of students who haven't been approved
      * @throws StudentNotFoundForApprovalException student not found for approval
      */
     @Override

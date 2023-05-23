@@ -237,7 +237,7 @@ public class AdminCRSMenu {
 
         List<Student> pendingStudentsList = adminOperation.viewPendingAdmissions();
         if (pendingStudentsList.size() == 0) {
-            System.out.println("No students pending approvals");
+//            System.out.println("No students pending approvals");
             return pendingStudentsList;
         }
         System.out.println(String.format("%20s | %20s | %20s", "StudentId", "Name", "GenderConstant"));
@@ -255,7 +255,7 @@ public class AdminCRSMenu {
         List<Student> studentList = viewPendingAdmissions();
         if (studentList.size() == 0) {
 
-
+            System.out.println("No pending requests");
             return;
         }
 
@@ -276,6 +276,9 @@ public class AdminCRSMenu {
 
     }
 
+    /**
+     * Approves all pending student requests
+     */
     private void approveAll(){
         List<Student> studentList = viewPendingAdmissions();
         if (studentList.size() == 0) {
