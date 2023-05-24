@@ -37,6 +37,7 @@ public class App extends Application<Configuration> {
         e.jersey().register(new AdminRestAPI());
         e.jersey().register(new CRSApplicationRestController());
         e.jersey().register(new EmployeeRESTController(e.getValidator()));
+        e.jersey().register(new StudentRestAPI());
     }
 
     public static void main(String[] args) throws Exception {
